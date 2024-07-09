@@ -1,0 +1,27 @@
+<?php
+
+class Image
+{
+
+  public function crop_image($original_file_name, $cropped_file_name,$max_width,$max_height);
+  {
+      if(file_exists($original_file_name))
+      {
+          $original_image = imagecreatefromjpeg($original_file_name);
+          $original_image = imagecreatefromgif($original_file_name);
+          $original_image = imagecreatefrompng($original_file_name);
+
+
+
+          $original_width = imagesx($original_image);
+          $original_height = imagesx($original_image);
+
+      }
+
+      imagecopyresampled()
+  }
+
+}
+
+
+ ?>

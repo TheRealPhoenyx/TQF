@@ -1,0 +1,21 @@
+<?php
+
+class Post
+{
+  private $error = "";
+  public function create_post($userid, $data)
+
+  {
+      if (!empty($data['post']))
+      {
+        $post = addslashes($data['post']);
+        $id = $_SESSION['tqf_userid'];
+  }else
+
+  {
+      $this->error .= "Please type something to post! <br>";
+  }
+  return $this->error;
+}
+}
+ ?>
